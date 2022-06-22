@@ -11,9 +11,16 @@
 
 </head>
 <body>
+@if(Session::has('usuario_borrado'))
+    {{session('usuario_borrado')}}
+
+
+@endif
+
 <h1 style="text-align:center ; margin:50px 0 ">Página principal del administrador</h1>
 
 <table width="500" class="table">
+    
 <tr>
     <th scope="col">Id</th>
     <th scope="col">Foto</th>
